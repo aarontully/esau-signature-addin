@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Signature Templates Form</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/office-ui-fabric-core/11.1.0/css/fabric.min.css"/>
+  <link href="../CSS/assignsignature.css" rel="stylesheet" type="text/css" media="all" />
+  <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="../../utilities.js"></script>
+  <script type="text/javascript" src="../Js/signature_templates.js"></script>
+  <script type="text/javascript" src="../Js/signature_loader.js"></script>
+  <script type="text/javascript" src="../Js/taskpane_main.js"></script>
+</head>
+
+<body>
+  <div class="container-taskp">
+
+    <p class="templates">Full Signature</p>
+    <div id="box_1"></div>
+
+    <p class="templates">Reply/Forward Signature</p>
+    <div id="box_2"></div>
+
+    <div style="height:5px;"><br/></div>
+
+    <p id="newMApt"><strong>Appointments</strong> will use <strong>New Mail</strong> template.</p>
+
+    <div style="height:5px;"><br></div>
+
+    <button id="edit_button" type="submit" class="registerbtn" onclick="navigate_to_taskpane2()">Edit</button>
+
+    <button id="submit_button" type="submit" class="registerbtn" onclick="save_signature_settings()">Save</button>
+
+    <p id="message">Success! You can close this pane.</p>
+
+
+  </div>
+</body>
+
+</html>
