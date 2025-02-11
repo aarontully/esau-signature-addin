@@ -166,12 +166,11 @@ function get_command_id() {
     "logoFileName": The filename of the logo image
  */
 function get_template_A_info(user_info) {
-  const logoFileName = "sig_image.png";
   let str = `
     <div>
       ${is_valid_data(user_info.greeting) ? `<div style="padding-bottom: 16px;">${user_info.greeting}</div>` : ""}
       <div style="color: #FF4370;"><strong>${user_info.name} ${is_valid_data(user_info.pronoun) ? `(${user_info.pronoun})` : ""}</strong></div>
-      <div style="padding-bottom: 16px;">${user_info.title}</div> ${is_valid_data(user_info.department) ? ` | ${user_info.department}` : ""}</div>
+      <div style="padding-bottom: 16px;">${user_info.job} ${is_valid_data(user_info.department) ? ` | ${user_info.department}` : ""}</div>
       ${is_valid_data(user_info.phone) ? `<div>${user_info.phone}</div>` : ""}
       <div>${address}</div>
       <div><a href="https://www.endemolshine.com.au/">www.endemolshine.com.au</a></div>
@@ -202,7 +201,7 @@ function get_template_B_info(user_info) {
     <div>
       ${is_valid_data(user_info.greeting) ? `<div style="padding-bottom: 16px;">${user_info.greeting}</div>` : ""}
       <div style="color: #FF4370;"><strong>${user_info.name} ${is_valid_data(user_info.pronoun) ? `(${user_info.pronoun})` : ""}</strong></div>
-      <div style="padding-bottom: 16px;">${user_info.title}</div> ${is_valid_data(user_info.department) ? ` | ${user_info.department}` : ""}</div>
+      <div style="padding-bottom: 16px;">${user_info.job} ${is_valid_data(user_info.department) ? ` | ${user_info.department}` : ""}</div>
     </div>
   `;
 
