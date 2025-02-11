@@ -191,3 +191,5 @@ function reset_all_configuration()
   clear_all_localstorage_data();
   clear_roaming_settings();
 }
+
+

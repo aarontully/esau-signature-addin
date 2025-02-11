@@ -1,5 +1,3 @@
-const { is } = require("core-js/core/object");
-
 function get_template_A_str(user_info)
 {
   let str = `
